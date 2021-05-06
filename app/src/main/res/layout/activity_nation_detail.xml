@@ -91,7 +91,7 @@
                 android:textSize="15dp" />
 
             <TextView
-                android:id="@+id/volumn"
+                android:id="@+id/volume"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"

@@ -9,4 +9,4 @@ data class NationDetailData (
         val language: String
 )
 
-data class GsonData(val data: ArrayList<NationData>)
+data class GsonData(val data: ArrayList<NationDetailData>)

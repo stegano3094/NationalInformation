@@ -16,9 +16,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val recyclerListView = findViewById<RecyclerView>(R.id.nation_list)
         recyclerListView.layoutManager = LinearLayoutManager(this)
         val adapter = NationAdapter(this, listOf(
-                NationData(R.drawable.ic_launcher_foreground, "벨기에", "브뤼셀"),
-                NationData(R.drawable.ic_launcher_foreground, "아르헨티나", "부에노스아이레스"),
-                NationData(R.drawable.ic_launcher_foreground, "브라질", "브라질리아")
+                NationData(R.drawable.i_belgium, "벨기에", "브뤼셀"),
+                NationData(R.drawable.i_argentina, "아르헨티나", "부에노스아이레스"),
+                NationData(R.drawable.i_canada, "캐나다", "오타와")
         ))
         adapter.setOnItemClickListener(this)
         recyclerListView.adapter = adapter
