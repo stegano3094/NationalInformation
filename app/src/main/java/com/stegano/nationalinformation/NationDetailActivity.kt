@@ -40,9 +40,10 @@ class NationDetailActivity : AppCompatActivity() {
     }
 
     private fun getResourId(selected: String) : Int {
-        var resourId: Int = 0
+        var resourId = 0
 
         when(selected) {
+            "대한민국" -> resourId = R.drawable.i_korea
             "벨기에" -> resourId = R.drawable.i_belgium
             "아르헨티나" -> resourId = R.drawable.i_argentina
             "캐나다" -> resourId = R.drawable.i_canada
@@ -54,9 +55,6 @@ class NationDetailActivity : AppCompatActivity() {
     private fun initView(data: NationDetailData?) {
         txt_name.text = data?.name
         capital.text = data?.capital
-        volume.text = data?.volume
-        weather.text = data?.weather
         language.text = data?.language
-        location.text = data?.location
     }
 }
